@@ -40,7 +40,7 @@ def chat():
         results_index = np.argmax(results) # index of the largest value in our list
         tag = labels[results_index]
         
-        if results[results_index] >= 0.75:    # 75% probability
+        if results[results_index] >= 0.7:    # 70% probability
             # getting a response from the tag
             for tg in data["intents"]:
                 if tg["tag"] == tag:
@@ -49,7 +49,7 @@ def chat():
             response = random.choice(responses)
         
         else:
-            response = "Sorry, I don't understand. Please ask another question."
+            response = "Sorry, I didn't quite get that."
     
         return str(response)
 

@@ -15,8 +15,9 @@
     <!-- My CSS -->
     <!-- <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"> -->
 
-    <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
-    <link rel="icon" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alike&family=Labrada:wght@700&family=Laila:wght@300&display=swap"rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <style>
@@ -34,12 +35,17 @@
 
         h1 {
             border: none;
-            /* border-radius: 5px; */
-            color:#58543e;
+            color: #edf2fb;
             display: inline-block;
+            font-family: 'Labrada', serif;
             font-size: 3em;
             margin: 5;
             padding: 10px;
+        }
+
+        hr {
+            border: 1px solid #cbd1da;
+            max-width: 40%;
         }
 
         #chatbox {
@@ -61,15 +67,15 @@
         #textInput {
             width: 90%;
             border: none;
-            border-bottom: 3px solid black;
-            font-family: 'Alegreya';
+            border-bottom: 3px solid rgb(39, 66, 66);
+            font-family: 'Laila', sans-serif;
             font-size: 17px;
         }
 
         .userText {
-            color:bisque;
-            background-color: #615b3c; 
-            font-family: 'Alegreya';
+            color:rgb(39, 66, 66);
+            background-color: #d7e3fc; 
+            font-family: 'Laila', sans-serif;
             font-size: 17px;
             text-align: center;
             line-height: 40px;
@@ -82,9 +88,9 @@
         }
 
         .botText {
-            color:darkgray;
-            background-color:rgb(44, 51, 58);
-            font-family: 'Alegreya';
+            color:rgb(39, 66, 66);
+            background-color: #b6ccfe;
+            font-family: 'Laila', sans-serif;
             font-size: 17px;
             text-align: center;
             line-height: 40px;
@@ -112,12 +118,15 @@
             box-sizing: border-box;
             position: fixed;
             border-radius: 5px;
+            border: 1px solid rgb(39, 66, 66);
+            color: rgb(39, 66, 66);
+            background-color: #c9cfda;
         }
     </style>
 
 </head>
 
-<body background="{{ url_for('static', filename='images/bg1.jpg') }}">
+<body background="{{ url_for('static', filename='images/image1.jpg') }}">
     
     {% block content %}
     
