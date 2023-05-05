@@ -37,7 +37,7 @@ def chat():
         
         # passing the processed user input to the model
         results = model.predict([bag_of_words(inp, words)])[0]
-        results_index = np.argmax(results) # index of the largest value in our list
+        results_index = np.argmax(results) # index of the largest value in the list
         tag = labels[results_index]
         
         if results[results_index] >= 0.7:    # 70% probability

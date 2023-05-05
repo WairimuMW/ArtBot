@@ -38,7 +38,7 @@ except:
             labels.append(intent["tag"])
 
     # stemming and vectorization
-    words = [stemmer.stem(w.lower()) for w in words if w not in "?"]    # or w != "?"
+    words = [stemmer.stem(w.lower()) for w in words if w not in "?"]
     words = sorted(list(set(words)))    # remove any duplicate elements and convert back into a list
     labels = sorted(labels)
 
@@ -73,12 +73,12 @@ except:
         pickle.dump((words, labels, training, output), f)
         
 
-# building the model using tflearn
+# Building the model using tflearn
 
 # getting rid of previous settings
 tf.compat.v1.reset_default_graph()
 
-# define the input shape that we're expecting for our model
+# define the input shape that I'm expecting for the model
 net = tflearn.input_data(shape = [None, len(training[0])])
 
 # 2 fully connected hidden layers with 8 neurons
@@ -91,7 +91,7 @@ net = tflearn.fully_connected(net, len(output[0]), activation = "softmax")
 
 net = tflearn.regression(net)
 
-# to train our model
+# to train the model
 # DNN is a type of neural network
 model = tflearn.DNN(net)
 
@@ -106,50 +106,3 @@ except:
 
     # save the model
     model.save("model.tflearn")
-
-
-
-# Using the model
-
-# processing user input
-# def bag_of_words(s, words):
-#     # create an empty bag of words list
-#     bag = [0 for _ in range(len(words))]
-    
-#     s_words = nltk.word_tokenize(s)
-#     s_words = [stemmer.stem(word.lower()) for word in s_words]
-    
-#     # generating the bag of words
-#     for sent in s_words:
-#         for i, w in enumerate(words):
-#             if w == sent:
-#                 bag[i] = 1
-    
-#     return np.array(bag)
-
-
-# Getting user input and generating responses
-# def chat():
-#     print("Start talking with the bot (type quit to end conversation)!")
-#     while True:
-#         inp = input("Artist: ")
-#         if inp.lower() == "quit":
-#             break
-        
-#         # passing the processed user input to the model
-#         results = model.predict([bag_of_words(inp, words)])[0]
-#         results_index = np.argmax(results) # index of the largest value in our list
-#         tag = labels[results_index]
-        
-#         if results[results_index] >= 0.75:    # 75% probability
-#             # getting a response from the tag
-#             for tg in data["intents"]:
-#                 if tg["tag"] == tag:
-#                     responses = tg["responses"]
-            
-#             print(random.choice(responses))
-        
-#         else:
-#             print("Sorry, I don't understand. Please ask another question.")
-
-# chat()  # calling the chat function

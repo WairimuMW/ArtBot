@@ -5,13 +5,13 @@
          "context_set": ""
         },
         {"tag": "goodbye",
-         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
-         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day", "bye"],
+         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!", "bye"],
          "context_set": ""
         },
         {"tag": "name",
          "patterns": ["What's your name?", "What should I call you?", "Who are you?", "Who am I talking to?"],
-         "responses": ["My name is Genbot", "I'm Genbot", "You can call me Genbot"],
+         "responses": ["My name is Artbot", "I'm Artbot", "You can call me Artbot"],
          "context_set": ""
         },
         {"tag": "thanks",
