@@ -15,52 +15,57 @@
          "context_set": ""
         },
         {"tag": "thanks",
-         "patterns": ["thank you", "thanks", "This was helpful"],
+         "patterns": ["thank you", "thanks", "This was helpful", "okay", "you were helpful"],
          "responses": ["you're welcome", "I'm happy to help", "I hope I was helpful"],
          "context_set": ""
         },
         {"tag": "about",
          "patterns": ["What do you do?", "What is your purpose", "What is your objective?", "How can you help me?", "What is your function?"],
-         "responses": ["I am a chatbot designed to generate an art prompt or idea based on the topic you pick. I have been programmed with various drawing and painting ideas spanning a wide range of topics and subjects. Some of the topics include landscapes, cityscapes, cats, castles, houses, trains, machines, forest, doors and aliens."],
+         "responses": ["I am a chatbot designed to generate a drawing or painting idea. I have been programmed with various prompts spanning a wide range of topics and subjects: animals like cats, ducks and spiders; general concepts such as perspective drawing, landscapes and fantasy and random items like vegetables. My knowledge is however, limited and I may generate incorrect output or lack information you require.\\nThe ideas I generate are meant to inspire you to create something wonderful. Feel free to alter them as you see fit and experiment with different styles and techniques."],
          "context_set": ""
         },
         {"tag": "options",
-         "patterns": ["What categories do you have?", "Give me a few suggestions.", "I want to draw anything", "Any painting idea.", "Which topics do you cover?"],
-         "responses": ["Some of the options include: forest, train, perspective, vegetable, and ducks.", "I have several options including: cats, dystopian, death and fantasy.", "I can give you a few topics to choose from such as: landscape, sky, cityscape, bridge, and aliens."],
+         "patterns": ["What examples do you have?", "Give me a few suggestions.", "Can you give me examples?", "Any examples?", "Any suggestions?"],
+         "responses": ["1. Forest painting idea  2. Do you have any painting ideas of a duck?  3. Drawing idea of a door."],
          "context_set": ""
         },
+        {"tag": "noanswer",
+         "patterns": [""],
+         "responses": ["Sorry, I didn't understand you", "Please give me more information.", "Not sure I understand that", "I didn't quite get that", "Could you rephrase your question?"],
+         "context": [""]
+        },
         {"tag": "forest",
-         "patterns": ["Do you have any forest prompts?", "I need an idea of a forest painting.", "forest painting idea"],
+         "patterns": ["Do you have any forest prompts?", "I need an idea of a forest painting.", "forest painting idea", "Any forest drawing idea?"],
          "responses": ["You could paint a wild fire in a forest.", "How about painting a forest trail.", "A forest with a fallen tree or log creating a natural bridge across a small creek or stream.", "A forest with a family of deer or other woodland creatures hiding among the trees and bushes.", "A forest clearing with sunlight shining down onto the forest floor and a glimpse of a meadow beyond.", "A misty forest with a thick layer of fog and trees disappearing into the distance.", "A dense forest with tall trees and sunlight filtering through the leaves.", "A forest at night with a full moon casting an eerie glow on the trees and underbrush."],
          "context_set": ""
         },
         {"tag": "train",
-         "patterns": ["I want to draw a train", "How can I draw a train?", "Do you have any train prompts?", "Do you have an idea of a train drawing?"],
+         "patterns": ["I want to draw a train", "How can I draw a train?", "Do you have any train prompts?", "Do you have an idea of a train drawing?", "Any painting idea of a train?"],
          "responses": ["Create a charcoal drawing of an old train in an overgrown landscape.", "A train station at night, with the train approaching the platform and passengers waiting on the platform.", "A vintage passenger train traveling through a winter landscape with snow-covered trees and mountains in the background.", "A freight train carrying cargo containers or goods traveling through an industrial area.", "A vintage steam locomotive traveling through a rural landscape with mountains or rolling hills in the background.", "A train traveling through a tunnel with a view of the light at the end.", "A train crossing a river or a scenic valley with a breathtaking view of the surrounding nature."],
          "context_set": ""
         },
         {"tag": "perspective",
-         "patterns": ["I want to practice perspective drawing.", "Do you have any idea on perspective painting?", "perspective drawing ideas"],
+         "patterns": ["I want to practice perspective drawing.", "Do you have any idea on perspective painting?", "perspective drawing ideas", "different perspectives"],
          "responses": ["Create a painting that shows atmospheric perspective.", "A forest path with trees receding in the distance, using diminishing size and overlapping to create a sense of depth.", "A car or train viewed from the side, with the wheels appearing to recede into the distance, using linear perspective.", "draw a bird's eye view of a city.", "Sketch a towering skyscraper viewed from the ground."],
          "context_set": ""
         },
         {"tag": "vegetable",
-         "patterns": ["Which vegetable should I paint?", "Do you have a vegetable idea?"],
+         "patterns": ["Which vegetable should I paint?", "Do you have a vegetable idea?", "Any painting idea of a vegetable?"],
          "responses": ["A painting of a vegetable doing an office job would be pretty interesting.", "You could paint peppers, either spicy chili peppers or sweet bell peppers in different colors.", "Carrots, either individually or in a bunch with their green leaves.", "Cauliflower, either whole or in florets with their green leaves.", "Eggplants, either whole or sliced in half with their stem.", "Onions, either whole or sliced with their skin and stem.", "Broccoli, either individual stalks or in a bunch with their green leaves."],
          "context_set": ""
         },
         {"tag": "duck",
-         "patterns": ["Any duck ideas?", "duck drawing prompts"],
+         "patterns": ["Any duck ideas?", "duck drawing prompts", "Got any painting ideas of a duck?"],
          "responses": ["Draw ducks in a row.", "A mother duck with her ducklings following behind her.", "A duck floating on the water with its reflection visible.", "A duck flying through the air with its wings spread wide and feathers ruffled."],
          "context_set": ""
         },
         {"tag": "cat",
-         "patterns": ["Do you have any cat prompts?", "I feel like drawing a cat.", "Give me an interesting cat prompt.", "cat drawing ideas"],
+         "patterns": ["Do you have any cat prompts?", "I feel like drawing a cat.", "Give me an interesting cat prompt.", "cat drawing ideas", "Any painting idea of a cat?", "cat?", "cats?", "kitty", "feline"],
          "responses": ["draw a cat that looks like he's up to no good", "Illustrate the phrase, 'this cat gives me the creeps'", "How about you draw a cat chasing a dog.", "Since cats love playing, you could draw a cat playing a sport.", "A black cat with its sleek fur and glowing eyes.", "A group of cats cuddled up together or playing with each other.", "A cat stretching, with its paws extended and back arched."],
          "context_set": ""
         },
         {"tag": "elephant",
-         "patterns": ["Any elephant ideas?", "How should I sketch an elephant?"],
+         "patterns": ["Any elephant ideas?", "How should I sketch an elephant?", "painting idea of an elephant", "Got any drawing idea of an elephant?"],
          "responses": ["You can draw a circus elephant standing on a ball.", "An elephant living under water would be an interesting painting.", "How about sketching a cute baby elephant.", "An elephant with intricate patterns drawn onto its skin in vibrant colors."],
          "context_set": ""
         },
@@ -227,6 +232,16 @@
         {"tag": "bridge",
          "patterns": ["Do you have any bridge inspired painting idea", "bridge drawing prompt"],
          "responses": ["A landscape drawing featuring a bridge in the foreground, spanning over a river, canyon, or other natural feature.", "a mystical bridge, such as a rainbow bridge or a bridge made of clouds, leading to a magical world", "A futuristic drawing of a bridge", "A sketch of a pedestrian bridge, with its curves and angles, connecting two buildings or public spaces", "a suspension bridge, with its cables, towers, and roadways"],
+         "context_set": ""
+        },
+        {"tag": "food",
+         "patterns": ["Do you have any food prompts?", "I want to study food"],
+         "responses": ["draw your favourite food", "draw what you had for lunch", "draw fruit with your non-dominant hand", "several eggs on any surface", "a sandwitch", "draw 3 different views of the same food", "a yummy piece of cake", "raw chicken parts; cooked parts; eaten parts", "junk food with wrapper", "popcorn", "my favourite meal", "three things in your fridge", "paint chocolate melting in your mouth", "freshly made bread", "paint a perfectly baked pie", "paint a donut or your favourite sweet"],
+         "context_set": ""
+        },
+        {"tag": "quote",
+         "patterns": ["I need inspiration.", "Any inspirational quote?", "Do you know any art quotes?"],
+         "responses": ["Every artist dips his brush in his own soul, and paints his own nature into his pictures. -Henry Ward Beecher", "I would rather die of passion than of boredom. -Vincent van Gogh", "Art is a collaboration between God and the artist, and the less the artist does the better. -Andre Gide", "The object isn't to make art, it's to be in that wonderful state which makes art inevitable. -Robert Henri", "If I were called upon to define briefly the word Art, I should call it the reproduction of what the senses preceive in nature, seen through the veil of the soul. -Paul Cezanne", "A great artist is always before his time or behind it. -George Moore", "A painting is never finished - it simply stops in interesting places. -Paul Gardner", "The world of reality has its limits; the world of imagination is boundless. -Jean-Jacques Rousseau", "To practice any art, no matter how well or badly, is a way to make your soul grow. So do it. -Kurt Vonnegut", "Inspiration does exist but it must find you working. -Pablo Picasso", "Painting is easy when you don't know how, but very difficult when you do. -Edgar Degas", "Life beats down and crushes the soul and art reminds you that you have one. -Stella Adler", "Art is the only way to run away without leaving home. -Twyla Tharp", "Colour is my day-long obsession, joy and torment. -Claude Monet", "Have no fear of perfection, you'll never reach it. -Salvador Dali", "I never paint dreams or nightmares. I paint my own reality. -Frida Kahlo", "The object of art is not to reproduce reality, but to create a reality of the same intensity. -Alberto Giacometti", "Creativity takes courage. -Henri Matisse"],
          "context_set": ""
         }
     ]
