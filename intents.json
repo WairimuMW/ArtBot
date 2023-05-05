@@ -1,0 +1,233 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "Hey", "Hello", "How are you", "Is anyone there?", "Good day", "Whats up", "How's your day going?"],
+         "responses": ["Hello", "Good to see you", "Hi there", "How can I help you?", "I'm doing okay", "My day is going well", "Hey, how may I help you?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+         "context_set": ""
+        },
+        {"tag": "name",
+         "patterns": ["What's your name?", "What should I call you?", "Who are you?", "Who am I talking to?"],
+         "responses": ["My name is Genbot", "I'm Genbot", "You can call me Genbot"],
+         "context_set": ""
+        },
+        {"tag": "thanks",
+         "patterns": ["thank you", "thanks", "This was helpful"],
+         "responses": ["you're welcome", "I'm happy to help", "I hope I was helpful"],
+         "context_set": ""
+        },
+        {"tag": "about",
+         "patterns": ["What do you do?", "What is your purpose", "What is your objective?", "How can you help me?", "What is your function?"],
+         "responses": ["I am a chatbot designed to generate an art prompt or idea based on the topic you pick. I have been programmed with various drawing and painting ideas spanning a wide range of topics and subjects. Some of the topics include landscapes, cityscapes, cats, castles, houses, trains, machines, forest, doors and aliens."],
+         "context_set": ""
+        },
+        {"tag": "options",
+         "patterns": ["What categories do you have?", "Give me a few suggestions.", "I want to draw anything", "Any painting idea.", "Which topics do you cover?"],
+         "responses": ["Some of the options include: forest, train, perspective, vegetable, and ducks.", "I have several options including: cats, dystopian, death and fantasy.", "I can give you a few topics to choose from such as: landscape, sky, cityscape, bridge, and aliens."],
+         "context_set": ""
+        },
+        {"tag": "forest",
+         "patterns": ["Do you have any forest prompts?", "I need an idea of a forest painting.", "forest painting idea"],
+         "responses": ["You could paint a wild fire in a forest.", "How about painting a forest trail.", "A forest with a fallen tree or log creating a natural bridge across a small creek or stream.", "A forest with a family of deer or other woodland creatures hiding among the trees and bushes.", "A forest clearing with sunlight shining down onto the forest floor and a glimpse of a meadow beyond.", "A misty forest with a thick layer of fog and trees disappearing into the distance.", "A dense forest with tall trees and sunlight filtering through the leaves.", "A forest at night with a full moon casting an eerie glow on the trees and underbrush."],
+         "context_set": ""
+        },
+        {"tag": "train",
+         "patterns": ["I want to draw a train", "How can I draw a train?", "Do you have any train prompts?", "Do you have an idea of a train drawing?"],
+         "responses": ["Create a charcoal drawing of an old train in an overgrown landscape.", "A train station at night, with the train approaching the platform and passengers waiting on the platform.", "A vintage passenger train traveling through a winter landscape with snow-covered trees and mountains in the background.", "A freight train carrying cargo containers or goods traveling through an industrial area.", "A vintage steam locomotive traveling through a rural landscape with mountains or rolling hills in the background.", "A train traveling through a tunnel with a view of the light at the end.", "A train crossing a river or a scenic valley with a breathtaking view of the surrounding nature."],
+         "context_set": ""
+        },
+        {"tag": "perspective",
+         "patterns": ["I want to practice perspective drawing.", "Do you have any idea on perspective painting?", "perspective drawing ideas"],
+         "responses": ["Create a painting that shows atmospheric perspective.", "A forest path with trees receding in the distance, using diminishing size and overlapping to create a sense of depth.", "A car or train viewed from the side, with the wheels appearing to recede into the distance, using linear perspective.", "draw a bird's eye view of a city.", "Sketch a towering skyscraper viewed from the ground."],
+         "context_set": ""
+        },
+        {"tag": "vegetable",
+         "patterns": ["Which vegetable should I paint?", "Do you have a vegetable idea?"],
+         "responses": ["A painting of a vegetable doing an office job would be pretty interesting.", "You could paint peppers, either spicy chili peppers or sweet bell peppers in different colors.", "Carrots, either individually or in a bunch with their green leaves.", "Cauliflower, either whole or in florets with their green leaves.", "Eggplants, either whole or sliced in half with their stem.", "Onions, either whole or sliced with their skin and stem.", "Broccoli, either individual stalks or in a bunch with their green leaves."],
+         "context_set": ""
+        },
+        {"tag": "duck",
+         "patterns": ["Any duck ideas?", "duck drawing prompts"],
+         "responses": ["Draw ducks in a row.", "A mother duck with her ducklings following behind her.", "A duck floating on the water with its reflection visible.", "A duck flying through the air with its wings spread wide and feathers ruffled."],
+         "context_set": ""
+        },
+        {"tag": "cat",
+         "patterns": ["Do you have any cat prompts?", "I feel like drawing a cat.", "Give me an interesting cat prompt.", "cat drawing ideas"],
+         "responses": ["draw a cat that looks like he's up to no good", "Illustrate the phrase, 'this cat gives me the creeps'", "How about you draw a cat chasing a dog.", "Since cats love playing, you could draw a cat playing a sport.", "A black cat with its sleek fur and glowing eyes.", "A group of cats cuddled up together or playing with each other.", "A cat stretching, with its paws extended and back arched."],
+         "context_set": ""
+        },
+        {"tag": "elephant",
+         "patterns": ["Any elephant ideas?", "How should I sketch an elephant?"],
+         "responses": ["You can draw a circus elephant standing on a ball.", "An elephant living under water would be an interesting painting.", "How about sketching a cute baby elephant.", "An elephant with intricate patterns drawn onto its skin in vibrant colors."],
+         "context_set": ""
+        },
+        {"tag": "ocean",
+         "patterns": ["I feel like painting the ocean.", "I want to create something inspired by the ocean.", "Give me an idea of an ocean-inspired painting.", "ocean painting ideas"],
+         "responses": ["You could do a study of seaweed and coral.", "A functioning lighthouse at the bottom of the ocean.", "A close-up of waves breaking on the shore, with foam and spray in the foreground.", "A stormy ocean with dark clouds, lightning, and waves crashing against a ship.", "A whale breaching the surface of the water, with spray shooting out of its blowhole."],
+         "context_set": ""
+        },
+        {"tag": "dystopian",
+         "patterns": ["How should I paint a dystopian world?", "dystopian world painting ideas"],
+         "responses": ["Paint two armies fighting in a dystopian world.", "A dystopian version of a recognizable landmark, such as the Eiffel Tower or the Statue of Liberty.", "A surreal dystopian landscape with strange, otherworldly elements, such as floating islands or distorted perspectives.", "A post-apocalyptic cityscape with crumbling buildings, abandoned streets, and overgrown vegetation."],
+         "context_set": ""
+        },
+        {"tag": "world",
+         "patterns": ["I want to create my own world.", "I want to paint a new world.", "What is an interesting world that I could create?", "world painting idea", "world painting prompt"],
+         "responses": ["You could paint a doorway to another world.", "How about a painting of a tiny world.", "Create a map of your own world."],
+         "context_set": ""
+        },
+        {"tag": "mushrooms",
+         "patterns": ["I'm thinking of drawing mushrooms, any ideas?", "I feel like drawing mushrooms.", "Mushrooms would make an interesting painting.", "mushroom painting idea"],
+         "responses": ["Draw a person fighting evil mushrooms.", "sketch cute mushroom kids", "Create a surreal painting with giant mushrooms growing in unexpected places, such as a city street or inside a building.", "A close-up of a mushroom cap, showing its intricate gills and texture."],
+         "context_set": ""
+        },
+        {"tag": "death",
+         "patterns": ["I want to create a piece inspired by death.", "Do you have any death-inspired ideas?", "death painting idea"],
+         "responses": ["You experience a glimpse into the afterlife.", "Create a piece from the phrase, 'the gardens of death'.", "Create a painting of something that's back from the dead.", "A grim reaper, with their iconic hooded robe and scythe, standing over a fallen figure."],
+         "context_set": ""
+        },
+        {"tag": "blood",
+         "patterns": ["I need an idea of a painting that features blood.", "I want to create a piece inspired by blood.", "I want to learn how to paint blood.", "I want a prompt related to blood."],
+         "responses": ["Create a painting of a person with bleeding orifices.", "Create a painting of a ritual sacrifice, with blood spilling onto an altar or symbol, depicting the power and intensity of ancient religious beliefs.", "Paint a vampire, with blood dripping from its fangs or mouth, evoking the dark and seductive allure of the undead."],
+         "context_set": ""
+        },
+        {"tag": "fairy",
+         "patterns": ["I want to draw a fairy", "I need an idea of a faerie drawing.", "How should I draw my fairy?", "fairy painting idea"],
+         "responses": ["draw a fairy relaxing in a mug of ale", "A fairy sitting on a mushroom, playing a tiny instrument or reading a book, surrounded by lush greenery and flowers.", "A group of fairies gathered around a mystical tree, with glowing leaves and an enchanted aura.", "A dark fairy with black wings, dressed in a flowing gown and surrounded by shadowy creatures.", "A winter fairy, with snowflake wings and a shimmering white gown, surrounded by icicles and snowdrifts.", "A water fairy, with glistening blue scales and flowing hair, swimming in a sparkling pond or river.", "A fire fairy, with fiery orange wings and a passionate spirit, surrounded by flames and sparks."],
+         "context_set": ""
+        },
+        {"tag": "witch",
+         "patterns": ["Do you have any prompts involving witches.", "Give me an idea of a witch drawing.", "I want to create a painting inspired by witches.", "witch inspired painting idea"],
+         "responses": ["You stumble upon a group of witches in the forest, in the midst of casting a spell.", "Paint a witch's room.", "A painting of a witch in her kitchen, surrounded by jars of mysterious potions and ingredients, with a black cat as her familiar.", "A painting of a coven of witches gathered around a cauldron, with smoke and sparks rising from the bubbling concoction.", "A painting of a witch performing a ritual, with candles, crystals, and other magical tools surrounding her.", "A painting of a witch casting a spell, with a beam of light or energy emanating from her wand or hands.", "A painting of a witch's house, with a thatched roof and crooked windows, surrounded by a mystical garden and guarded by a gnarled tree.", "A painting of a witch on a mountaintop, surrounded by swirling clouds and lightning, calling forth the power of the elements."],
+         "context_set": ""
+        },
+        {"tag": "dark",
+         "patterns": ["Do you have any ideas involving something dark.", "I need an idea of a dark-themed painting.", "I want to draw something dark.", "painting idea with a dark theme"],
+         "responses": ["You wake up in the middle of the night to see a dark figure crawling across your floor.", "A painting of a person in a dark or abandoned space, such as a basement or abandoned building, with a sense of danger or unease.", "A painting of a person struggling with their inner demons, with abstract or surreal elements conveying their emotional turmoil.", "A painting of a haunted mansion or castle, with ghostly figures and eerie shadows lurking in the background.", "A painting of a dark forest, with twisted trees and overgrown roots, and strange creatures lurking in the shadows."],
+         "context_set": ""
+        },
+        {"tag": "house",
+         "patterns": ["Do you have any house-themed prompts?", "house prompts", "Idea of a house drawing", "I want to paint an interesting house."],
+         "responses": ["Draw a haunted house.", "You stumble upon a strange house you've never seen before.", "A painting of a row of colorful townhouses, with unique features and personalities for each house.", "A painting of a cozy cabin in the woods, with a fireplace, rustic furniture, and wildlife outside.", "A painting of a quaint cottage in the countryside, with a thatched roof, flower boxes, and a white picket fence."],
+         "context_set": ""
+        },
+        {"tag": "door",
+         "patterns": ["door art prompt", "painting idea of a door", "drawing idea of a door", "door-themed idea"],
+         "responses": ["What lies beyond the locked door- is it something important, dangerous, or utterly demented", "A rustic barn door, with wooden planks and a large metal handle.", "A stained glass door in a church or cathedral, with vibrant colors and intricate designs.", "A secret door in a bookshelf or hidden in a wall, with a sense of mystery and adventure.", "A dilapidated and weathered door in an abandoned building, with peeling paint and a sense of foreboding.", "A mysterious door in the forest, with ivy growing up its sides and a hint of magic or otherworldliness.", "A grand and ornate castle door, with intricate carvings and a huge handle or knocker."],
+         "context_set": ""
+        },
+        {"tag": "eyes",
+         "patterns": ["Painting idea of eyes.", "Idea of a drawing of eyes."],
+         "responses": ["paint a jar of collected eyes", "draw a person with no eyes", "A painting of an animal eye, with unique characteristics and textures.", "A painting of a series of eyes, each with a different color or shape, arranged in a collage or mosaic style."],
+         "context_set": ""
+        },
+        {"tag": "sky",
+         "patterns": ["Sky art prompts", "Can you give me an idea of a sky painting?", "Do you have any sky painting ideas?"],
+         "responses": ["The sky is turning purple!", "Paint a cloudy day with a ray of sunshine breaking through the clouds.", "Paint a dramatic sky with a rainbow-colored sunset or sunrise.", "A sunrise over a mountain range with shades of blue and pink.", "A stormy sky with dark clouds and lightning bolts in the distance."],
+         "context_set": ""
+        },
+        {"tag": "creepy",
+         "patterns": ["Creepy drawing ideas", "Do you have any creepy prompts"],
+         "responses": ["A creepy doll with a cracked porcelain face and soulless eyes.", "An abandoned asylum with broken windows and overgrown vines.", "A creepy clown with a sinister smile holding a bloody knife.", "A painting of a mysterious and foreboding figure, shrouded in shadow and hidden in darkness.", "A painting of a creepy doll or puppet, with sinister features and a haunting expression.", "A monster or creature, with grotesque features and a menacing stance."],
+         "context_set": ""
+        },
+        {"tag": "alien",
+         "patterns": ["alien inspired drawing idea", "alien inspired painting idea", "Do you have any alien prompt"],
+         "responses": ["Paint an alien creature, with intricate details and unique features.", "Draw a spaceship, either landing on or taking off from an alien planet.", "An alien invasion, with war machines and destruction in the background.", "An alien city or civilization, with unique architecture and technology.", "An astronaut encountering an alien life form on a distant planet."],
+         "context_set": ""
+        },
+        {"tag": "landscape",
+         "patterns": ["landscape painting idea", "Do you have any landscape drawing idea?", "landscape drawing prompt"],
+         "responses": ["A dramatic coastline, with towering cliffs and crashing waves.", "A painting of a dense forest, with sunlight streaming through the trees.", "A bustling city skyline, with tall buildings and twinkling lights.", "A rural farmland or meadow, with grazing animals and fields of crops.", "A sunset or sunrise over a rolling countryside or desert.", "A painting of a snowy mountain range, with crisp, cold air."],
+         "context_set": ""
+        },
+        {"tag": "cityscape",
+         "patterns": ["Any idea that is city themed?", "cityscape idea", "city inspired drawing idea", "city inspired painting idea"],
+         "responses": ["A drawing of a bustling downtown area, with tall skyscrapers and busy streets full of people.", "Paint a city during a specific season, such as a winter snowfall or a vibrant fall foliage display.", "a small town or suburb, with charming houses", "a city at night, with the bright lights of buildings and street lamps", "a historic city center, with narrow cobblestone streets and ancient buildings", "a futuristic city, with sleek buildings and advanced technology"],
+         "context_set": ""
+        },
+        {"tag": "fantasy",
+         "patterns": ["Do you have any fantasy themed prompt", "fantasy painting idea", "fantasy inspired drawing idea"],
+         "responses": ["A plotting demon, waiting outside the walls of the city by the road for a passing adventurer.", "A fairy tale scene such as Cinderella's ball, the three little pigs' houses, or Red Riding Hood's encounter with the wolf.", "an underwater city with mermaids and sea monsters", "a whimsical tea party with talking animals and fantastical treats", "a garden full of oversized flowers and insects"],
+         "context_set": ""
+        },
+        {"tag": "goat",
+         "patterns": ["goat inspired idea", "goat themed painting prompt", "drawing idea of a goat"],
+         "responses": ["a goat grazing in a meadow", "Draw a satyr, a mythological creature that is half-goat and half-human.", "a mountain goat perched on a rocky outcropping", "a goat skull with intricate designs and patterns", "a goat with a playful expression on its face, perhaps sticking out its tongue or winking", "a goat herder tending to a flock of goats", "a goat with its distinctive curved horns standing proudly"],
+         "context_set": ""
+        },
+        {"tag": "hand",
+         "patterns": ["I want to draw a hand", "Do you have any prompt incorporating hands?"],
+         "responses": ["a hand holding a book", "A drawing of a hand with intricate henna or mehndi designs.", "Paint a hand holding a delicate flower.", "A sketch of a hand in motion.", "a hand reaching out to touch or grasp something", "Sketch a hand holding a paintbrush, pencil, or other artistic tool."],
+         "context_set": ""
+        },
+        {"tag": "magic",
+         "patterns": ["Something magical", "A magic filled painting idea", "Any painting idea involving the magical arts?"],
+         "responses": ["Paint a wizard casting a spell, surrounded by swirling magical energy", "a magical forest filled with enchanted creatures and glowing plants", "A painting of a sorceress conjuring up a storm, with lightning bolts crackling in the background.", " mermaid swimming in a sea filled with sparkling magical gems", "A painting of a mystical landscape filled with floating islands, rainbow bridges, and glowing orbs."],
+         "context_set": ""
+        },
+        {"tag": "tree",
+         "patterns": ["A painting idea inspired by a tree", "different types of trees"],
+         "responses": ["a majestic oak tree in a forest, with its branches reaching out and leaves rustling in the wind", "Paint a tree in the fall, with its leaves turning golden yellow, orange, and red.", "Paint a tree in the winter, with snow on its branches and a frosty mist in the air.", "Paint a cherry blossom tree in full bloom, with delicate pink flowers covering its branches.", "a tree in a desert landscape, with its roots reaching deep into the sandy soil", "a tree in a mystical realm, with its branches stretching into the sky and roots delving deep into the earth", "a tree on a hilltop, silhouetted against the setting sun", "a tree in the rainforest, with lush green foliage and exotic birds perched on its branches"],
+         "context_set": ""
+        },
+        {"tag": "flower",
+         "patterns": ["flower themed drawing idea", "a type of flower", "flower inspired painting idea", "different species of flowers"],
+         "responses": ["A painting of a field of wildflowers, with different colors and shapes creating a vibrant and lively scene.", "a garden filled with lavender", "Paint a hibiscus", "Paint a lily pond."],
+         "context_set": ""
+        },
+        {"tag": "water",
+         "patterns": ["Any painting idea involving water", "water-themed painting prompt", "how to draw water"],
+         "responses": ["a tranquil stream in a forest, with the water glistening in the sunlight and surrounded by lush foliage", "a rainstorm over a city, with the water streaming down the streets and creating reflections of the city lights", "Paint a tropical island, with crystal clear water and vibrant marine life.", "Paint a river flowing through a canyon, with the water carving its way through the rocky landscape.", "painting of a rushing waterfall, with the misty spray and thundering sound creating a dramatic scene"],
+         "context_set": ""
+        },
+        {"tag": "spider",
+         "patterns": ["Do you have a drawing prompt of a spider?", "A painting idea of a spider"],
+         "responses": ["A drawing of a spider in action, capturing its prey or spinning its web.", "a spider crawling on a leaf or branch, with its legs and body in different positions", "Draw a spider from a different perspective, such as looking up at it from the ground or down at it from above."],
+         "context_set": ""
+        },
+        {"tag": "frog",
+         "patterns": ["Do you have a drawing idea of a frog?", "A painting idea including a frog."],
+         "responses": ["Paint a green tree frog perched on a branch, with its bright eyes and sticky toes.", "a group of frogs gathered on a log, each with its own unique pose and expression", "draw a frog in mid-leap, with its legs stretched out and its body arched", "a frog in a rainforest setting, surrounded by lush foliage and other wildlife", "a poison dart frog, with its bright colors and distinctive patterns", "a bullfrog in a pond, with the water and lily pads surrounding it"],
+         "context_set": ""
+        },
+        {"tag": "dragon",
+         "patterns": ["Dragon inspired painting idea", "drawing idea of a dragon"],
+         "responses": ["A slumbering dragon in a cave. Perhaps they are slumbering on a pile of treasure.", "A painting of a dragon breathing fire, surrounded by a shimmering magical aura."],
+         "context_set": ""
+        },
+        {"tag": "god",
+         "patterns": ["Any art idea involving a god?", "god-inspired painting prompt", "god-inspired drawing idea"],
+         "responses": ["Hades, the Greek god of the underworld, with a stern expression and surrounded by flames and shadows.", "Vishnu, the Hindu god of preservation and protection, with four arms and surrounded by lotus flowers.", "Apollo, the Greek god of the sun and music, playing a lyre and surrounded by a golden aura.", "Zeus, the Greek god of thunder, in a dramatic pose with lightning bolts in his hands.", "Anubis, the Egyptian god of the afterlife, depicted with a jackal's head and holding a staff."],
+         "context_set": ""
+        },
+        {"tag": "goddess",
+         "patterns": ["Any art idea involving a goddess?", "goddess-inspired painting prompt", "goddess-inspired drawing idea"],
+         "responses": ["Saraswati, the Hindu goddess of knowledge and the arts, playing a veena (a stringed musical instrument).", "Kuan Yin, the Chinese goddess of compassion and mercy, holding a vase of healing water.", "Freyja, the Norse goddess of love and fertility, surrounded by cats and wearing a necklace of amber.", "Demeter, the Greek goddess of harvest and agriculture, holding a sheaf of wheat and surrounded by fields of crops.", "Isis, the Egyptian goddess of fertility and motherhood, depicted with a headdress of cow horns and a sun disk."],
+         "context_set": ""
+        },
+        {"tag": "glass",
+         "patterns": ["Any glass-themed painting prompt?", "Drawing idea of glass"],
+         "responses": ["Paint a crystal chandelier hanging from a high ceiling, sparkling in the light.", "A still life painting of a collection of glassware, such as wine glasses, champagne flutes, and vases, arranged on a table or window sill.", "close-up painting of a glass prism refracting light into its component colors, creating a rainbow effect"],
+         "context_set": ""
+        },
+        {"tag": "machine",
+         "patterns": ["Any art idea that involves a machine", "idea for drawing part of a machine", "painting idea inspired by a machine"],
+         "responses": ["A drawing of a spacecraft or a satellite", "a factory or an industrial site, with smokestacks, conveyor belts, and other machinery working in concert to produce goods", "a vintage car or motorcycle", "A detailed technical drawing of a mechanical device, such as a clock or a typewriter, showing its inner workings and mechanisms."],
+         "context_set": ""
+        },
+        {"tag": "castle",
+         "patterns": ["castle-inspired drawing idea", "Do you have any castle prompt?", "castle painting idea"],
+         "responses": ["A futuristic castle with hovering platforms, holographic projections, and artificial intelligence, inspired by science fiction.", "A modern castle with sleek lines, minimalist design, and high-tech features, inspired by contemporary architecture.", "A Japanese-style castle with curved roofs, sliding doors, and tranquil gardens, inspired by the architecture of feudal Japan.", "A castle on a cliff, with steep drops and crashing waves below, inspired by the dramatic coastal scenery of Scotland or Ireland.", "A castle ruin with crumbled walls and overgrown vines, set in a desolate landscape with stormy skies.", "A Gothic castle with dark, foreboding architecture, sharp angles, and gargoyles perched on the walls.", "A medieval castle with a moat, drawbridge, and battlements, surrounded by lush forests and rolling hills."],
+         "context_set": ""
+        },
+        {"tag": "bridge",
+         "patterns": ["Do you have any bridge inspired painting idea", "bridge drawing prompt"],
+         "responses": ["A landscape drawing featuring a bridge in the foreground, spanning over a river, canyon, or other natural feature.", "a mystical bridge, such as a rainbow bridge or a bridge made of clouds, leading to a magical world", "A futuristic drawing of a bridge", "A sketch of a pedestrian bridge, with its curves and angles, connecting two buildings or public spaces", "a suspension bridge, with its cables, towers, and roadways"],
+         "context_set": ""
+        }
+    ]
+}
