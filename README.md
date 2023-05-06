@@ -1,5 +1,5 @@
 # Artbot
-<!-- ![plot](static/images/botimage.jpg) -->
+![plot](static/images/name.png)
 _A simple art prompt generator chatbot._
 
 ## Objective
