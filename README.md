@@ -24,7 +24,7 @@ The chatbot has been trained using a structured data file containing possible us
 User asks the bot for a prompt related to a specific topic and the bot returns an appropriate art prompt.
 Access it here: https://art-prompt-chatbot.herokuapp.com/
 
-<img src="static/images/GIF.gif" width="400px" height="500px">
+<img src="static/images/GIF.gif" width="600px" height="300px">
 
 
 ## Further Development
