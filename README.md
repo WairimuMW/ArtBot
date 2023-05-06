@@ -1,5 +1,6 @@
 # Artbot
-![](static/images/name.PNG)
+<!-- ![](static/images/name.PNG) -->
+<img src="static/images/name.PNG" alt="name" style="display: inline-block">
 _A simple art prompt generator chatbot._
 
 ## Objective
