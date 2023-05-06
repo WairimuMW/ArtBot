@@ -3,7 +3,7 @@ import nltk
 from nltk.stem.lancaster import LancasterStemmer
 stemmer = LancasterStemmer()
 import numpy as np
-import tensorflow as tf
+# import tensorflow as tf
 import tflearn
 import pickle
 import json
@@ -76,7 +76,7 @@ except:
 # Building the model using tflearn
 
 # getting rid of previous settings
-tf.compat.v1.reset_default_graph()
+# tf.compat.v1.reset_default_graph()
 
 # define the input shape that I'm expecting for the model
 net = tflearn.input_data(shape = [None, len(training[0])])
