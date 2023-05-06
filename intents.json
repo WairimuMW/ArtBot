@@ -11,7 +11,7 @@
         },
         {"tag": "name",
          "patterns": ["What's your name?", "What should I call you?", "Who are you?", "Who am I talking to?"],
-         "responses": ["My name is Artbot", "I'm Artbot", "You can call me Artbot"],
+         "responses": ["My name is ArtBot", "I'm ArtBot", "You can call me ArtBot"],
          "context_set": ""
         },
         {"tag": "thanks",
@@ -21,7 +21,7 @@
         },
         {"tag": "about",
          "patterns": ["What do you do?", "What is your purpose", "What is your objective?", "How can you help me?", "What is your function?"],
-         "responses": ["I am a chatbot designed to generate a drawing or painting idea. I have been programmed with various prompts spanning a wide range of topics and subjects: animals like cats, ducks and spiders; general concepts such as perspective drawing, landscapes and fantasy and random items like vegetables. My knowledge is however, limited and I may generate incorrect output or lack information you require.\\nThe ideas I generate are meant to inspire you to create something wonderful. Feel free to alter them as you see fit and experiment with different styles and techniques."],
+         "responses": ["I am a chatbot designed to generate a drawing or painting idea. I have been programmed with various prompts spanning a wide range of topics and subjects: animals like cats, ducks and spiders; general concepts such as perspective drawing, landscapes and fantasy and random items like vegetables. My knowledge is however, limited and I may generate incorrect output or lack information you require. The ideas I generate are meant to inspire you to create something wonderful. Feel free to alter them as you see fit and experiment with different styles and techniques."],
          "context_set": ""
         },
         {"tag": "options",

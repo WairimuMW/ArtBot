@@ -39,7 +39,7 @@ except:
             labels.append(intent["tag"])
 
     # stemming and vectorization
-    words = [stemmer.stem(w.lower()) for w in words if w not in "?"]
+    words = [stemmer.stem(w.lower()) for w in words if w != "?"]
     words = sorted(list(set(words)))    # remove any duplicate elements and convert back into a list
     labels = sorted(labels)
 
@@ -76,7 +76,7 @@ except:
 
 # Building the model using tflearn
 
-# getting rid of previous settings
+# reset global default graph
 tf.compat.v1.reset_default_graph()
 
 # define the input shape that I'm expecting for the model
@@ -98,7 +98,7 @@ model = tflearn.DNN(net)
 
 # load the model if it already exists
 try:
-    model.load("model.tflearn")
+    model.load("models/model.tflearn")
 
 except:
     # training
@@ -106,4 +106,4 @@ except:
     model.fit(training, output, n_epoch = 1000, batch_size = 8, show_metric = True)
 
     # save the model
-    model.save("model.tflearn")
+    model.save("models/model.tflearn")
