@@ -1,5 +1,5 @@
 # Artbot
-![plot](static/images/name.png)
+![](static/images/name.PNG)
 _A simple art prompt generator chatbot._
 
 ## Objective
@@ -21,6 +21,7 @@ The chatbot has been trained using a structured data file containing possible us
 ## Usage
 User asks the bot for a prompt related to a specific topic and the bot returns an appropriate art prompt.
 Access it here: https://art-prompt-chatbot.herokuapp.com/
+![](https://github.com/WairimuMW/ArtBot/blob/main/static/images/GIF.gif)
 
 ## Further Development
 The chatbot may be further developed to use machine learning algorithms to improve its prompt generation capabilities over time by learning from user feedback.  It may also incorporate image data and OCR technology to analyze and extract text from images, allowing users to input their own images as prompts.
