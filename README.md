@@ -1,6 +1,6 @@
 # Artbot
 
-<img src="static/images/name.PNG" alt="name" style="display: inline-block" width="100px">
+<img src="static/images/name.PNG" alt="name" style="display: inline-block" width="400px">
 
 _A simple art prompt generator chatbot._
 
@@ -24,7 +24,7 @@ The chatbot has been trained using a structured data file containing possible us
 User asks the bot for a prompt related to a specific topic and the bot returns an appropriate art prompt.
 Access it here: https://art-prompt-chatbot.herokuapp.com/
 
-<img src="static/images/GIF.gif" width="600px" height="300px">
+<img src="static/images/GIF.gif">
 
 
 ## Further Development
