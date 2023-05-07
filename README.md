@@ -1,6 +1,6 @@
 # Artbot
 
-<img src="static/images/name.PNG" alt="name" style="display: inline-block" width="400px">
+<img src="static/images/name.PNG" alt="name" style="display: inline-block" width="800px">
 
 _A simple art prompt generator chatbot._
 
