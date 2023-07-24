@@ -33,4 +33,4 @@ The chatbot may be further developed to use machine learning algorithms to impro
 
 ## Author
 ##### Mary Wachiuri
-I am a junior data scientist as well as an artist. As this was my first NLP project, my aim was to create something fun, creative and functional.
+I'm a data scientist as well as an artist. As this was my first NLP project, my aim was to create something fun, creative and functional.
